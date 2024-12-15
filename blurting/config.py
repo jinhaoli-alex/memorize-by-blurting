@@ -38,7 +38,7 @@ MAX_OPTION_NUMBER: int = 5  # For multiple choices mode
 project_absolute_path: str = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
 stap = project_absolute_path + "/subject_resources/"  # subject textual (resources) absolute path
 
-aap = project_absolute_path + "/audio_resource/"  # audio's absolute path
+aap = project_absolute_path + "/duolingo-audio/"  # audio's absolute path, aap
 audio_path = {
     "done_right": aap + "done_right.wav",
     "done_wrong": aap + "done_wrong.wav",
