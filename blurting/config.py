@@ -1,5 +1,6 @@
 """
-Variables are storing here
+Variables are storing here.
+They are modifiable to change programme behaviours.
 """
 
 # Exterior packages
