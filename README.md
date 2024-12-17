@@ -1,5 +1,5 @@
 # Intro
-This is a functional tool called "Blurting Bee" to help students memorise stuff scientifically and efficiently by using common-recognized "blurting method".
+This is a functional tool called "Blurting Bee" to help the user memorise stuff scientifically and efficiently by using widely-recognized "blurting method".
 
 # Usage
 1. Clone the file to your local machine;
