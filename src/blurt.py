@@ -58,15 +58,15 @@ class QuizGenerator:
             mode = self.self_chosen_mode
 
         _rm = config.review_mode
-        m = modes.Mode(q_index, data, q_id)
+        mode = modes.Mode(q_index, data, q_id)
         if mode == _rm["Multiple Choices"]:
-            if_correct: bool = m.multiple_choices()
+            if_correct: bool = mode.multiple_choices()
         elif mode == _rm["Filling Blanks"]:
-            if_correct = m.filling_blanks()
+            if_correct = mode.filling_blanks()
         elif mode == _rm["Matching Keywords Input"]:
-            if_correct = m.matching_keywords()
+            if_correct = mode.matching_keywords()
         else:  # JP mode will process this one
-            if_correct = m.just_prompt()
+            if_correct = mode.just_prompt()
 
         # BGM for encouragement
         if if_correct:

@@ -4,7 +4,7 @@ import re
 import time
 from pprint import pformat
 import requests
-import simpleaudio as sa
+import simpleaudio
 from colorama import Fore, Style
 from datetime import datetime
 import textwrap
@@ -47,11 +47,11 @@ def play_music(status):
     if BGM_SWITCH_ON:
         _ap = audio_path
         if status == "do it right":
-            wave_obj = sa.WaveObject.from_wave_file(_ap["done_right"])
+            wave_obj = simpleaudio.WaveObject.from_wave_file(_ap["done_right"])
         elif status == "do it wrong":
-            wave_obj = sa.WaveObject.from_wave_file(_ap["done_wrong"])
+            wave_obj = simpleaudio.WaveObject.from_wave_file(_ap["done_wrong"])
         elif status == "finish a quiz":
-            wave_obj = sa.WaveObject.from_wave_file(_ap["finish_quiz"])
+            wave_obj = simpleaudio.WaveObject.from_wave_file(_ap["finish_quiz"])
         else:
             return Exception("Error (Fail to display audio_resource)")
         play_obj = wave_obj.play()
